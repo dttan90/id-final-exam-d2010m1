@@ -1,0 +1,428 @@
+
+.box {
+    position: relative;
+}
+.header {
+    height: 100px;
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 7px 5px rgb(138, 138, 138);
+    top: 0px;
+    z-index: 3;
+}
+.header .logo {
+    padding: 20px;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+
+#menu {
+    display: inline-block;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    margin-right: 20px;
+}
+/* Sử dụng cho menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #F8C800; */
+    background-color: transparent;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+}
+
+li {
+    float: left;
+    /* border-right: 1px solid white; */
+    text-transform: uppercase;
+    padding-right: 0.5rem;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li a:hover,
+.dropdown:hover {
+    background: #f5ed28;
+}
+
+li a,
+.dropdown-btn {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 0 7px;
+    text-decoration: none;
+}
+
+#dangky{
+   
+    text-align: center;
+    width: 75px;
+    float: right;
+    height: 25px;
+    background-color:#F8C800;
+    top: 30px;
+    padding-top: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    color: #965016;
+    margin: 12px ;
+    font-size: 13px ;
+    
+
+}
+#dangky:hover{background-image: linear-gradient(to right, #f88d00 , #f8be00, #f4f80f)}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f5ed28;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all .3s ease-in-out;
+    text-transform: none;
+    padding-right: 0.5rem;
+    min-width: 227px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 3px 16px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    /* transition: all .3s ease-in-out; */
+    border: 0!important;
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    /* background-color: tomato; */
+    background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}
+
+
+
+.button {
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    font-family: roboto;
+    padding: 10px;
+    border-radius: 2em;
+    color: white;
+    transition: 1s;
+    background-size: 300%;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+.button:hover {
+    background-position: right;
+    color: palevioletred;
+}
+.btn-1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.content {
+    background-color: rgb(240, 240, 240);
+    height: 1400px;
+}
+.content .left {
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 30px;
+}
+.content .left h3 {
+    color: rgb(247, 190, 36);
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30px;
+}
+.content .left p {
+    font-family: roboto;
+    width: 300px;
+}
+.content .right {
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 400px;
+}
+.content .right .first {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+}
+.content .right .first img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .first p {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.content .right .second {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 250px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .second img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .second p {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.content .right .third {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 500px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .third img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .third p {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.content .right .fourth {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 750px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .fourth img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .fourth p {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.content .right .first,.content .right .second,.content .right .third,.content .right .fourth > p {
+    font-family: roboto;
+    font-size: 14px;
+}
+.content .right > .first, .second, .third, .fourth {
+    box-shadow: 0px 0px 15px rgb(196, 196, 196);
+}
+.content .right .first:hover,.content .right .second:hover,.content .right .third:hover,.content .right .fourth:hover {
+    background-color: goldenrod;
+    transition: 1s;
+    color: white;
+}
+.content .right .first:hover img,.content .right .second:hover img,.content .right .third:hover img,.content .right .fourth:hover img{
+    filter: brightness(100);
+    transition: 2s;
+}
+.content .under {
+    background-color: white;
+    height: 630px;
+    width: 1200px;
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    border-radius: 1em;
+}
+.content .under .first1 {
+    padding: 5px;
+}
+.content .under .first1 h1 {
+    color: rgb(247, 190, 36);
+    font-family: roboto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.content .under .second1 p {
+    font-family: roboto;
+    padding: 5px;
+    position: absolute;
+    top: 70px;
+}
+.content .under .third1 h1 {
+    font-family: 'Lobster', cursive;
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 350px;
+}
+.content .under .third1 p {
+    font-family: roboto;
+    width: 350px;
+    text-align: justify;
+    padding-left: 20px;
+}
+.content .under .fourth1 {
+    position: absolute;
+    top: 170px;
+    right: 20px;
+}
+.content .under .fourth1 .pic1 {
+    position: relative;
+    top: 60px;
+    left: 260px;
+}
+.content .under .fourth1 .pic2 {
+    position: relative;
+    top: -340px;
+    left: 165px;
+    z-index: 1;
+}
+.content .under .fourth1 .pic3 {
+    position: relative;
+    top: -320px;
+    left: 1px;
+    z-index: 1;
+}
+
+.content .under .fourth1 .h31 {
+    text-align: right;
+    position: absolute;
+    right: 1px;
+    top: -20px;
+    font-family: roboto;
+    font-weight: bolder;
+    font-size: 20px;
+    z-index: 2;
+}
+.content .under .fourth1 .h32 {
+    text-align: right;
+    position: absolute;
+    right: 1px;
+    font-family: roboto;
+    font-weight: bolder;
+    font-size: 20px;
+    z-index: 2;
+}
+.footer {
+    background-color: rgb(196, 196, 196);
+    height: 650px;
+}
+.footer .one1 {
+    padding-left: 120px;
+    padding-top: 40px;
+}
+.footer .one1 .row {
+    font-family: roboto;
+    font-weight: bold;
+    border-bottom: 2px solid dodgerblue;
+    padding-bottom: 10px;
+}
+.footer .one1 h4 {
+    font-family: roboto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.footer .one1 p {
+    font-family: roboto;
+}
+.footer .one1 .col1 {
+    float: left;
+    padding-right: 40px;
+}
+.footer .one1 .col2 {
+    float: left;
+    padding-right: 40px;
+}
+.footer .one1 .col3 {
+    float: left;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+.footer .two1 {
+    position: relative;
+    top: 180px;
+    display: block; 
+}
+.footer .two1 .row {
+    font-family: roboto;
+    font-weight: bold;
+    border-bottom: 2px solid dodgerblue;
+    padding-bottom: 10px;
+    margin-left: 120px;
+     position: absolute;
+    left: 120px;
+    width: 4000px; 
+}
+.footer .two1 .row p {
+    position: relative;
+    right: 1020px;
+    top: 15px;
+}
+
+.footer .two1 .col4 {
+    float: left;
+    padding-right: 40px;
+     position: relative;
+    right: 1020px;
+    margin-right: 400px;
+    margin-left: 120px;
+    margin-top: -120px;
+}
+.footer .two1 .col5 {
+    float: left;
+     padding-right: 40px;
+     position: relative;
+    right: 320px;
+    margin-left: -330px;
+    margin-top: -120px;
+}
+.footer .two1 h4 {
+    font-family: roboto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.footer .two1 p {
+    font-family: roboto;
+}
+.footer .two1 .col6 {
+    float: left;
+padding-right: 40px;
+ position: relative;
+    right: 320px;
+    margin-left: 10px;
+    margin-top: -120px;
+    padding-left: 20px;
+}

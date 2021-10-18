@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html,
+body{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  position: relative;
+}
+
+#header{
+  height: 90px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  box-shadow: 0px 5px 10px rgb(177, 177, 177);
+  top:10px;
+}
+#container{
+  width: 1280px;
+  height: 100%;
+  display: inline-block;
+  
+}
+#logo {
+  width: 200px;
+  height: 90px;
+  float: left;
+}
+#menu{
+  width: 1180px;
+  height: 90px;
+  float: left;
+  display: inline-block;
+  margin-top: 40px;
+  padding-left: 100px ;
+  font-size: 14px;
+  text-align: center;
+}
+#button{
+  width: 100px;
+  height: 90px;
+  background-color: rgb(255, 255, 255);;
+  float: right;
+  text-align: center;
+  padding-top: 25px;
+}
+form input{
+   width: 80px;
+   height: 40px;
+   border-radius: 10em;
+   background-color: rgb(255, 184, 54);
+
+}
+/* Phần sử dụng Menu */
+ul {
+  list-style-type: none;
+  /* overflow: hidden; */
+  background-color: transparent;
+  font-weight: 600;
+  display: inline-block;
+}
+
+li {
+  float: left;
+  /* border-right: 1px solid white; */
+  text-transform: uppercase;
+  padding-right: 0.5rem;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+li a:hover,
+.dropdown:hover {
+  background: #f5ed28;
+}
+
+li a,
+.dropdown-btn {
+  display: inline-block;
+  color: #333;
+  text-align: center;
+  padding: 0 7px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f5ed28;
+  z-index: 1;
+  line-height: 2;
+  border: none;
+  transition: all .3s ease-in-out;
+  text-transform: none;
+  padding-right: 0.5rem;
+  min-width: 227px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 3px 16px;
+  display: block;
+  text-align: left;
+  background-color: transparent;
+  /* transition: all .3s ease-in-out; */
+  border: 0!important;
+  padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+  /* background-color: tomato; */
+  background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.item {
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+
+.item-symbol {
+  font-size: 7px;
+  position: relative;
+  top: -3px;
+}
+/* Phần noidung */
+#noidung{
+  width: 1280px;
+  height: 300px;
+  margin-top: 100px;
+  position: relative;
+  display: inline-block;
+}
+#noidung1{
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  /* position: relative;
+  display: inline-block; */
+  float: left;
+}
+.tieude1{
+  color: rgba(255, 166, 1, 0.993);
+  font-size: 40px;
+  text-align: left;
+  padding-top:80px;
+  
+}
+#noidung2{
+  padding: 0px;
+  margin: 0px;
+}
+.khung{
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  box-shadow: -0.5px 1px 1px 3.5px rgba(245, 245, 245, 0.637);
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.khung:hover{
+  background-color: rgba(255, 255, 134, 0.842);
+}
+#noidungtiep{
+  width: 1280px;
+  height: 650px;
+  margin-top: 50px;
+  position: relative;
+  
+}
+#left{
+  width: 600px;
+  height: 400px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 10px;
+  text-align: left;
+  float: left;
+}
+#right{
+  width: 600px;
+  height: 400px;
+  float: right;
+  display: inline-block;
+  box-sizing:border-box;
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+/* Phần footer */
+#footerlon{
+  width: 1280px;
+  height: 700px;
+  background-color: rgb(199, 199, 199);
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#footer{
+  width: 1080px;
+  height: 600px;
+  position:static;
+  background-color: rgb(199, 199, 199);
+  margin-left: 200px;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+.address{
+  text-align: left;
+  display: inline-block;
+  float: left;
+  
+}
+.add-1{
+  float: left;
+  width: 30%;
+  font-size: 20px;
+  padding-top: 20px;
+  
+}
+.add-2{
+  float: left;
+  width: 30%;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.add-3{
+  float: left;
+  width: 30%;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+

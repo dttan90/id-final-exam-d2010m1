@@ -1,0 +1,409 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="shortcut icon" type="image/png" href= "index/favicon.webp">
+</head>
+    <header>
+    <body>
+    <div id='nav'>
+      <div>
+        <a href="#">
+        <img src="index/logo.png" id="logo">
+        </a>
+      </div>
+        <!-- HTML: Đây là phần nội dung menu -->
+      <div id="menu">
+    <ul>
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Giới thiệu &#9660;	</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Multimedia</a>
+                <a href="#">Arena Multimedia</a>
+                <a href="#">Tại sao chọn Arena Multimedia</a>
+                <a href="#">Cơ sở vật chất</a>
+                <a href="#">Cộng đồng nói về Arena</a>
+                <a href="#">Nhân vật truyền cảm hứng</a>
+                <a href="#">Hỏi & đáp</a>
+                <a href="#"> </a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh &#9660;</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                <a href="#">Chương trình đào tạo</a>
+                <a href="#">Phương pháp đào tạo</a>
+                <a href="#">Học phí</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                <a href="#">Kết quả thi tuyển</a>
+                <a href="#">Thông tin tuyển sinh</a>
+                <a href="#">Lịch tuyển sinh</a>
+                <a href="#">Tài liệu tuyển sinh</a>
+                <a href="#">Đề thi mẫu</a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Gallery &#9660;</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Đội ngũ giảng viên</a>
+                <a href="#">Đồ án nổi bật</a>
+                <a href="#">Hoạt động học viên</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                <a href="#">Học viên tiêu biểu</a>
+                <a href="#">Portfolio học viên</a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#"> Tin tức - Sự kiện &#9660;</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                <a href="#">Tin Arena</a>
+                <a href="#">Tin Multimedia</a>
+                <a href="#">Tin báo chí</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng &#9660;</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Đối tác liên thông</a>
+                <a href="#">Hỗ trợ tuyển dụng</a>
+                <a href="#">Tin tuyển dụng</a>
+
+            </div>
+        </li>
+        <li>
+            <a href="#">Liên hệ</a>
+        </li>
+        
+    </ul>
+      </div>
+        <a href="#" class="dangky"><b>Đăng ký</b></a>
+   </div>
+   </header>
+    <style>
+        #logo {
+            float: left;
+            width: 120px;
+            padding-left: 60;
+            padding-right: 200;
+            margin-top: 20;
+        }
+        #nav {
+     background-color: white;
+     width:100%;
+     height:90px;
+      box-shadow: 0px 1px 10px #5E5E5E;
+      position:fixed;
+      top:-15px;
+      left: 0;
+       }
+    </style>
+
+<!-- CSS: Đây là phần định dạng css cho menu -->
+<style>
+    #menu {
+        display: inline-block;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+        margin-right: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15;
+        background-size: cover;
+        position: fixed;
+        padding-top: 15;
+    }
+    /* Sử dụng cho menu */
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-weight: 510;
+}
+
+li {
+    float: left;
+    /* border-right: 1px solid white; */
+    text-transform: uppercase;
+    padding-right: 0.5rem;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li a:hover,
+.dropdown:hover {
+    background: #f5ed28;
+}
+
+li a,
+.dropdown-btn {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 28px 7px;
+    text-decoration: none;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f5ed28;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all .3s ease-in-out;
+    text-transform: none;
+    padding-right: 0.5rem;
+    min-width: 227px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 3px 16px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    border: 0!important;
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}
+    .dangky {
+        background-color: rgba(255, 217, 0, 0.87);
+            color: brown;
+            border-radius:20px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            position: fixed;
+            margin-top: 35;
+            margin-left: 980;
+            font-family: 'roboto',sans-serif;
+    }
+    .dangky:hover {
+        background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28); 
+        font-style: italic;
+    }
+</style>
+</body>
+</html>
+<html>
+<div class="row">
+ <div id="box0" class="co">
+    <div style="color: rgba(250, 195, 14, 0.87)">
+    <a href="#" class="tieude1"><h2>Arena<br>Multimedia</h2></a>
+    </div>
+    <p>Thương hiệu số 1 tại Châu Á về đào<br>tạo Chuyên gia Mỹ thuật Đa phương<br>tiện</p>
+ </div>
+ <div id="box1" class="col">
+    <img src="index/icon-1.png" alt="1" />
+    <p><center>25 năm kinh nghiệm</center></p>
+ </div>
+ <div id="box2" class="col">
+    <img src="index/icon-2.png" alt="2" />
+    <p><center>250 trung tâm</center></p>
+ </div>
+ <div id="box3" class="col">
+    <img src="index/icon-3.png" alt="3" />
+    <p><center>450.000 học viên</center></p>
+ </div>
+ <div id="box3" class="col">
+    <img src="index/icon-4.png" alt="4" />
+    <p><center>20 quốc gia</center></p>
+ </div>
+</div>
+
+<style>
+    /*==Chia cột phần content==*/
+.row {
+ margin: 3em auto;
+}
+.row .co {
+    float: left;
+    margin-top: 150;
+    margin-left: 200;
+    font-family: 'roboto', sans-serif;
+}
+.row .col {
+ float: left;
+ width: 12%;
+ height: 36%;
+ margin-right: 0%;
+ margin-top: 150;
+ margin-left: 25;
+ background: white;
+ border-radius: 10%;
+ box-shadow: 0px 1px 10px #5E5E5E;
+ font-family: 'roboto', sans-serif
+}
+.row .col img {
+    margin-left: 27;
+    margin-top: 30;
+}
+.row .col:hover {
+    background: #f5ed28;
+}
+</style>
+</html>
+<html>
+<div class="hellow">
+        <div id="bo" class="co">
+           <div style="color: rgba(250, 195, 14, 0.87)">
+           <a href="#" class="tieude2"><h2>Đào tạo - Tuyển sinh</h2></a>
+        </div> 
+    <hr>
+    <p>Chương trình Chuyên gia Mỹ thuật Đa phương tiện (Arena Multimedia Specialist Program -ASMP) 
+    kéo dài 30 tháng (4 kỳ học) trong lĩnh vực: Thiết kế Truyền thông & Quảng cáo và Sản xuất Nội dung Giải trí Kỹ thuật số</p>  
+    <div id="bo1" class="col1"> 
+        <h1><strong>THIẾT KẾ WEB & ỨNG<br>DỤNG KỸ THUẬT SỐ</strong></h1>
+        <p><justify>Học kỳ 2 cung cấp những kiến thức để thiết kế ra<br>
+        giao diện một website hoàn chỉnh cùng những ứng<br>
+        dụng phục vụ cho Digital Marketing, Social Media,<br>
+        App Mobile. Để làm được điều đó, học viên phải<br>
+        trải qua các môn học như: Thiết kế giao diện web<br>
+        cơ bản, phát triển trang web tương tác, sử dụng<br>
+        hình ảnh động cho web bằng Animate CC, tiếp thị<br>
+        số & khái niệm truyền thống... Kết thúc kỳ 2, học<br>
+        viên sẽ có cơ hội đảm nhận nhiều vị trí khác nhau,<br>
+        từ nhà thiết kế web đến thiết kế đồ họa động.</justify></p>
+     </div>
+    </div>
+    <div id="bo2" class="col2">
+        <div class="col21"><img src="index/hk2-title.webp" alt="hinh1" width="200" ></div>
+        <div class="col22"><p><img src="index/hk2-img.jpg" alt="hinh2" width="500"></p> </div>
+    </div>
+</div>
+<style>
+.hellow {
+    width: 1100px;
+    height: 560px;
+    float:left;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius:10px;
+    position: 100px 100px;
+    box-shadow: 0px 1px 10px #5E5E5E;
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 10;
+    font-family: 'roboto', sans-serif;
+    }
+
+.col1 {
+    float: left;
+    margin-top: -20;
+    margin-right: 50;
+    text-align: justify;
+}
+
+.hellow .col2 {
+    float: right;
+    margin-top: 0;
+    padding-right:0 ;
+}
+.tieude1 {
+    color: rgba(250, 195, 14, 0.87);
+    text-decoration: none;
+}
+.tieude2 {
+    color: rgba(250, 195, 14, 0.87);
+    text-decoration: none;
+}
+.col21 {
+    margin-left: 300;
+}
+
+</style>
+</html>
+<html>
+<div id="footer">
+<p><b>TP.HCM</b></p>
+<hr color="blue">
+<table>
+  <p>
+    <tr>
+        <td><b>Nguyễn Đình Chiểu</b><hr></td>
+        <td><b>Nguyễn Kiệm</b><hr></td>
+        <td><b>Tân Kỳ Tân Quý</b><hr></td>
+    </tr>
+    <tr>
+        <b><td>212-214 Nguyễn Đình Chiểu, P. Võ Thị Sáu, Q. 3<br>Tel: 1800 1525<br>Email: arena@aprotrain.com</td>
+        <td>778/10 Nguyễn Kiệm, P.4, Q. Phú Nhuận<br>Tel: 1800 6325<br>Email: arena@aprotrain.com</td>
+        <td>Số 6, Tân Kỳ Tân Quý, P. 15, Q. Tân Bình<br>Tel: 1800 2074<br>Email: arena@aprotrain.com</td>
+    </tr>
+  </p>
+</table>
+<p><b>HÀ NỘI</b></p>
+<hr color="blue">
+<table>
+  <p>
+    <tr>
+        <td><b>Trúc Khê</b><hr></td>
+        <td><b>Phạm Văn Bạch</b><hr></td>
+        <td><b>Trần Phú</b><hr></td>
+    </tr>
+    <tr>
+        <td>80 Trúc Khê, P. Láng Hạ, Q. Đống Đa<br>Tel: 1800 1542<br>Email: arena2@aprotrain.com</td>
+        <td>D29 Phạm Văn Bạch, P. Yên Hòa, Q. Cầu Giấy<br>Tel: 1800 1542<br>Email: arena2@aprotrain.com</td>
+        <td>110 Trần Phú, P. Mộ Lao, Q. Hà Đông<br>Tel: 1800 1542<br>Email: arena2@aprotrain.com</td>
+    </tr>
+  </p>
+</table>
+</div>
+<style>
+/*==Footer==*/
+#footer {
+ float: left;
+ margin-top: 40;
+ margin-left: -10;
+ background-color:#f0ebeb;
+ width: 88%;
+ height: 400;
+ padding-right:59;
+ padding-left: 130;
+ font-family: 'roboto', sans-serif;
+}
+table {
+    width: 1000px;
+}
+</style>
+</html>

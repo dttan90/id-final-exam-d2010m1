@@ -1,0 +1,449 @@
+.box {
+    position: relative;
+}
+.header {
+    height: 100px;
+    background-color: rgb(240, 240, 240);
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 7px 5px rgb(138, 138, 138);
+    top: 0px;
+    z-index: 3;
+}
+.header .logo {
+    padding: 20px;
+}
+.header .menu {
+    position: absolute;
+    right: 200px;
+    top: 0px;
+    height: 100px;
+}
+li > a {
+    padding: 5px;
+}
+li > i {
+    position: relative;
+    top: 35px;
+}
+.header ul {
+    list-style: none;
+    position: relative;
+    top: -16px;
+}
+.header ul li {
+    display: inline-block;
+    padding: 10px;
+    height: 80px;
+}
+.header ul a {
+    text-decoration: none;
+    color: black;
+    font-family: roboto;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    top: 33px;
+}
+.header ul li:hover {
+    background-color: rgb(255, 207, 50);
+}
+.one .drop {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    display: none;
+}
+.drop a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(255, 207, 50);
+}
+.drop a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+.one:hover .drop {
+    display: block;
+}
+.two .drop {
+    position: absolute;
+    top: 100px;
+    left: 163px;
+    width: 250px;
+    display: none;
+}
+.two:hover .drop {
+    display: block;
+}
+.two >div {
+    background-color: rgb(255, 207, 50);
+}
+div > text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+div > text {
+    font-weight: bold;
+    font-family: roboto;
+}
+div > i {
+    font-size: 10px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+.drop .mark1 {
+    padding-top: 20px;
+}
+.three .drop {
+    position: absolute;
+    top: 65px;
+    left: 371px;
+    width: 250px;
+    display: none;
+}
+.three:hover .drop {
+    display: block;
+}
+.three .mark2 {
+    background-color: rgb(255, 207, 50);
+    height: 100px;
+}
+.drop .mark2 {
+    padding-top: 20px;
+}
+.ford .drop {
+    position: absolute;
+    top: 100px;
+    left: 482.5px;
+    width: 250px;
+    display: none;
+}
+.ford:hover .drop {
+    display: block;
+}
+.ford .mark3 {
+    background-color: rgb(255, 207, 50);
+}
+.ford .mark4 {
+    background-color: rgb(255, 207, 50);
+    padding-top: 20px;
+    height: 50px;
+}
+.five .drop {
+    position: absolute;
+    top: 65px;
+    left: 655px;
+    width: 280px;
+    display: none;
+}
+.five:hover .drop {
+    display: block;
+}
+.drop a {
+    text-transform: none !important;
+}
+.button {
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    font-family: roboto;
+    padding: 10px;
+    border-radius: 2em;
+    color: white;
+    /* font-weight: bold; */
+    transition: 1s;
+    background-size: 300%;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+.button:hover {
+    background-position: right;
+    color: palevioletred;
+}
+.btn-1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+.content {
+    background-color: rgb(240, 240, 240);
+    height: 1300px;
+    padding-left: 225px ;
+}
+.content .left {
+    position: absolute;
+    padding-top: 150px;
+    padding-left: 30px;
+}
+.content .left h3 {
+    color: rgb(247, 190, 36);
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    width: 30px;
+}
+.content .left p {
+    font-family: roboto;
+    width: 300px;
+}
+.content .right {
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 400px;
+}
+.content .right .first {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+}
+.content .right .first img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .first p {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.content .right .second {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 250px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .second img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .second p {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.content .right .third {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 500px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .third img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .third p {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.content .right .fourth {
+    background-color: white;
+    height: 230px;
+    width: 150px;
+    border-radius: 0.5em;
+    margin-left: 750px;
+    position: absolute;
+    top: 200px;
+}
+.content .right .fourth img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.content .right .fourth p {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.content .right .first,.content .right .second,.content .right .third,.content .right .fourth > p {
+    font-family: roboto;
+    font-size: 14px;
+}
+.content .right > .first, .second, .third, .fourth {
+    box-shadow: 0px 0px 15px rgb(196, 196, 196);
+}
+.content .right .first:hover,.content .right .second:hover,.content .right .third:hover,.content .right .fourth:hover {
+    background-color: rgb(255, 183, 0);
+    transition: 0.5s;
+    color: white;
+}
+.content .right .first:hover img,.content .right .second:hover img,.content .right .third:hover img,.content .right .fourth:hover img{
+    filter: brightness(100);
+    transition: 0.5s;
+}
+.content .under {
+    background-color: white;
+    height: 630px;
+    width: 1200px;
+    position: absolute;
+    top: 500px;
+    left: 225px;
+    border-radius: 1em;
+    margin-left: 100px;
+}
+
+.content .under .first1 {
+    padding: 5px;
+}
+.content .under .first1 h1 {
+    color: rgb(247, 190, 36);
+    font-family: roboto;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.content .under .second1 p {
+    font-family: roboto;
+    padding: 5px;
+    position: absolute;
+    top: 70px;
+}
+.content .under .third1 h1 {
+    font-family: 'sans-serif';
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 350px;
+}
+.content .under .third1 p {
+    font-family: roboto;
+    width: 350px;
+    text-align: justify;
+    padding-left: 20px;
+}
+.content .under .fourth1 {
+    position: absolute;
+    top: 170px;
+    right: 20px;
+}
+.content .under .fourth1 .pic1 {
+    position: relative;
+    top: 60px;
+    left: 260px;
+}
+.content .under .fourth1 .pic2 {
+    position: relative;
+    top: -340px;
+    left: 165px;
+    z-index: 1;
+}
+.content .under .fourth1 .pic3 {
+    position: relative;
+    top: -320px;
+    left: 1px;
+    z-index: 1;
+}
+
+.content .under .fourth1 .h31 {
+    text-align: right;
+    position: absolute;
+    right: 1px;
+    top: -20px;
+    font-family: roboto;
+    font-weight: bolder;
+    font-size: 20px;
+    z-index: 2;
+}
+.content .under .fourth1 .h32 {
+    text-align: right;
+    position: absolute;
+    right: 1px;
+    font-family: roboto;
+    font-weight: bolder;
+    font-size: 20px;
+    z-index: 2;
+}
+.footer {
+    background-color: rgb(196, 196, 196);
+    height: 650px;
+}
+.footer .one1 {
+    padding-left: 120px;
+    padding-top: 40px;
+}
+.footer .one1 .row {
+    font-family: roboto;
+    font-weight: bold;
+    border-bottom: 2px solid dodgerblue;
+    padding-bottom: 10px;
+}
+.footer .one1 h4 {
+    font-family: roboto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.footer .one1 p {
+    font-family: roboto;
+}
+.footer .one1 .col1 {
+    float: left;
+    padding-right: 40px;
+}
+.footer .one1 .col2 {
+    float: left;
+    padding-right: 40px;
+}
+.footer .one1 .col3 {
+    float: left;
+    padding-right: 15px;
+    padding-left: 20px;
+}
+.footer .two1 {
+    position: relative;
+    top: 180px;
+    /* display: block; */
+}
+.footer .two1 .row {
+    font-family: roboto;
+    font-weight: bold;
+    border-bottom: 2px solid dodgerblue;
+    padding-bottom: 10px;
+    margin-left: 120px;
+    /* position: absolute;
+    left: 120px;
+    width: 4000px; */
+}
+.footer .two1 .row p {
+    position: relative;
+    right: 1020px;
+    top: 15px;
+}
+
+.footer .two1 .col4 {
+    float: left;
+    padding-right: 40px;
+    /* position: relative;
+    right: 1020px; */
+    margin-right: 400px;
+    margin-left: 120px;
+    margin-top: -120px;
+}
+.footer .two1 .col5 {
+    float: left;
+    /* padding-right: 40px; */
+    /* position: relative;
+    right: 320px; */
+    margin-left: -330px;
+    margin-top: -120px;
+}
+.footer .two1 h4 {
+    font-family: roboto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.footer .two1 p {
+    font-family: roboto;
+}
+.footer .two1 .col6 {
+    float: left;
+    /* padding-right: 40px; */
+    /* position: relative;
+    right: 320px; */
+    margin-left: 10px;
+    margin-top: -120px;
+    padding-left: 20px;
+}

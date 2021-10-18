@@ -1,0 +1,286 @@
+
+html, body {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position:relative;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    top: 0;
+    position: fixed;
+    box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 8%);
+    background-color: white;
+    z-index: 2;
+}
+
+#logo {
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+}
+
+#menu {
+    margin-left: 450px;
+    height: 100px;
+    width: 1000px;
+    position: absolute;
+}
+/* Sử dụng cho menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #F8C800; */
+    background-color: transparent;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    font-size: small;
+}
+
+li {
+    float: left;
+    /* border-right: 1px solid white; */
+    text-transform: uppercase;
+    padding-right: 0.5rem;
+}
+
+li.dropdown {
+    display: inline-block;
+
+}
+
+li a:hover,
+.dropdown:hover {
+    background: #f5ed28;
+}
+
+li a,
+.dropdown-btn {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 0 7px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f5ed28;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all .3s ease-in-out;
+    text-transform: none;
+    padding-right: 0.5rem;
+    min-width: 227px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 3px 16px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    /* transition: all .3s ease-in-out; */
+    border: 0!important;
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    /* background-color: tomato; */
+    background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}
+
+.btn-list {
+    background-color: rgb(255, 208, 0);
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100px;
+    transition: 0.3s background-color;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    background-color: #00aeef;
+}
+
+#body {
+    height: 790px;
+    width: 1000px;
+    margin-left: 15%;
+    position: relative;
+    background-color:white;
+    margin-top: 140px;
+    z-index: 1;
+
+}
+
+#main1 {
+    height: 260px;
+    width: 250px;
+    text-align: left;
+    position: relative;
+
+}
+
+#content1 {
+    width: 250px;
+}
+
+.box {
+    float: left;
+    width: 175px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0rem 0.5rem 0.5rem rgb(0 0 0 / 8%);
+    border-radius: 20px;
+    transition: 0.3s background-color;
+}
+
+.box:hover {
+    background-color: yellow;
+}
+
+#cot1 {
+    padding-top: 30px;
+
+    position: absolute;
+    left: 250px;
+    top: 0;
+}
+
+#cot2 {
+    padding-top: 30px;
+
+    position: absolute;
+    left: 440px;
+    top: 0;
+}
+
+#cot3 {
+    padding-top: 30px;
+
+    position: absolute;
+    left: 630px;
+    top: 0;
+}
+
+#cot4 {
+    padding-top: 30px;
+    display: block;
+    position: absolute;
+    left: 820px;
+    top: 0;
+}
+
+#main2 {
+    height: 470px;
+    width: 1000px;
+    text-align: left;
+    position: relative;
+    top: 0;
+    box-shadow: 0rem 0.5rem 0.5rem rgb(0 0 0 / 8%);
+}
+
+.box1 {
+    width: 950px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.box2 {
+    float: left;
+    width: 400px;
+    height: 200px;
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.box3 {
+    width: 500px;
+    height: 300px;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 460px;
+    position: absolute;
+}
+
+#footer {
+    height: 600px;
+    position: relative;
+    width: 100;
+    bottom: 0;
+    background-color: rgb(207, 204, 204);
+}
+
+.box4 {
+    height: 200px;
+    padding: 30px;
+    margin-left: 50px;
+
+}
+
+.box5 {
+    width: 330px;
+    text-align: left;
+    font-size: 15px;
+    float: left;
+    position: absolute;
+    border: #f5ed28;
+}
+.box6 {
+    width: 330px;
+    text-align: left;
+    font-size: 15px;
+    float: left;
+    position: absolute;
+    margin-left: 360px;
+}
+
+.box7 {
+    width: 330px;
+    text-align: left;
+    font-size: 15px;
+    float: left;
+    position: absolute;
+    margin-left: 720px;
+}
