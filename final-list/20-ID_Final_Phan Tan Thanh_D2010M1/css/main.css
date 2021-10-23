@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+    --priamry-cl: #f5ed28;
+    --header--heigt: 71px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: var(--header--heigt);
+    font-family: "Cabin", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.title {
+    font-size: 39px;
+    display: inline-block;
+    width: 100px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: var(--priamry-cl);
+    line-height: 1;
+}
+
+p {
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none;
+    color: #000;
+    font-weight: 700;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: var(--header--heigt);
+    justify-content: space-between;
+    padding: 0 5px 0 40px;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+header .logo {
+    width: 100px;
+}
+
+header .register button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--priamry-cl);
+}
+
+header .register button:hover {
+    color: white;
+    background-image: linear-gradient(to right, #ffc600, #f8c800, #f5ed28);
+}
+
+/* Body  */
+
+/* Media  */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.media {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.media__content {
+    flex: 1;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.media__intro {
+    display: flex;
+}
+.media__intro img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.media__intro__item {
+    width: 170px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    border-radius: 15px;
+    box-shadow: 0 0.125rem 18px rgb(0 0 0 / 30%);
+    margin-right: 20px;
+}
+
+.media__intro__item p {
+    font-size: 15px;
+}
+
+.media__intro__item:hover {
+    background-color: var(--priamry-cl);
+}
+
+/* Education  */
+
+.education {
+    margin-top: 60px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0.125rem 18px rgb(0 0 0 / 30%);
+}
+
+.education .title {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    border-bottom: 3px solid black;
+}
+
+.education .desc {
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+.education__content {
+    display: flex;
+}
+
+.education__content .left {
+    width: 45%;
+}
+
+.education__content .left .sub__title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.education__content .left p {
+    text-align: justify;
+}
+
+.education__content .right {
+    flex: 1;
+    padding: 0 100px;
+}
+
+.education__content .right img:first-child {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.education__content .right img {
+    float: right;
+}
+
+/* footer  */
+
+footer {
+    margin-top: 60px;
+    background: rgba(170, 170, 170, 0.571);
+    padding: 15px 0 15px 140px;
+}
+
+.footer__content:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.footer__title {
+    font-size: 25px;
+    padding-left: 15px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 2px solid blue;
+}
+
+.footer__list {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__list h4 {
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.401);
+}
+
+.footer__list ul {
+    margin-right: 40px;
+}
+
+.footer__list ul li {
+    margin-top: 20px;
+}

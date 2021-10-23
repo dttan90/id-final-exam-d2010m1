@@ -1,0 +1,99 @@
+#menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: right;
+}
+/* Sử dụng cho menu */
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #F8C800; */
+    background-color: transparent;
+    font-weight: 700;
+    margin-right: 20px;
+    height: 100%;
+
+    /* text-transform: uppercase; */
+}
+
+#menu li {
+    float: left;
+    height: 100%;
+
+    /* border-right: 1px solid white; */
+    text-transform: uppercase;
+    padding-right: 0.5rem;
+}
+
+#menu li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-btn:hover,
+.dropdown:hover {
+    background: #f5ed28;
+}
+
+.dropdown-btn {
+    color: #333;
+    /* text-align: center; */
+    padding: 0 7px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.dropdown-btn i {
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f5ed28;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-transform: none;
+    padding-right: 0.5rem;
+    min-width: 227px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 3px 16px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    /* transition: all .3s ease-in-out; */
+    border: 0 !important;
+    padding-left: 1.5rem;
+}
+
+.dropdown-content a:hover {
+    /* background-color: tomato; */
+    background-image: linear-gradient(to right, #ffc600, #f8c800, #f5ed28);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}

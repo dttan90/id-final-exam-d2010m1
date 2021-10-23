@@ -1,0 +1,233 @@
+.Container {
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+
+.Header {
+    box-shadow: 10px rgb(0 0 0 / 8%);
+    font-weight: 300px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 20px rgb(0 0 0 / 5%);
+    height: 150px;
+    width: 100%;
+    margin: -10px;
+    z-index: 1;
+}
+
+.Logo {
+    padding: 20px;
+    margin: auto;
+}
+
+.Button {
+    position: fixed;
+    display: inline-block;
+    box-sizing: border-box;
+    top: 20px;
+    right: 10px;
+}
+
+.Menu {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    right: 150px;
+    line-height: 100px;
+    box-shadow: 10px rgb(0 0 0 / 8%);
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+
+}
+
+li {
+    float: left;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li a:hover,
+.dropdown:hover {
+    background: orange;
+}
+
+li a,
+
+.dropdown-btn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: yellow;
+    z-index: 1;
+    line-height: 2;
+    border: none;
+    transition: all .3s ease-in-out;
+    text-transform: none;
+    padding-right: 1px;
+    min-width: 300px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    border: 0!important;
+    padding-left: 1px;
+}
+
+.dropdown-content a:hover {
+    background-image: orange;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+.item-symbol {
+    font-size: 7px;
+    position: relative;
+    top: -3px;
+}
+
+.btn-1 {
+    font-weight: 400px;
+    display: inline-block;
+    margin: 15px;
+    padding: 0 10px;
+    color: black;
+    background-color: yellow;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 15px;
+    transition: 0.3s
+}
+
+.btn-1:hover {
+    font-weight: 500;
+    background-image: orange;
+}
+
+.info {
+    margin: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 80%;
+}
+.arena {
+    max-width: 300px;
+    float: left;
+    padding-top: 10px;
+}
+.box {
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    float: right;
+    margin: 25px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s background-color;
+    box-shadow: 0 0 20px black;
+}
+.box:hover{
+    background-color: yellow
+}
+
+h1{
+    color: orange;
+}
+
+.dao_tao{
+    padding: 20px;
+    margin-top: 350px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.Sem2{
+    display: inline-block;
+}
+.thong_tin {
+    max-width: 50%;
+    float: left;
+}
+
+.image {
+    position: relative;
+    right: 0;
+    float: right;
+}
+
+.address {
+    margin: -10px;
+    padding: 10px 0 10px 10%;
+    background-color:grey;
+    min-height: 500px;
+
+}
+.boxx {
+    width:300px;
+    padding: 10px;
+}
+.col-1 {
+    float: left;
+}
+.col-2 {
+    float: left;
+}
+.col-3 {
+    float: left;
+}
+.col-4 {
+    float: left;
+}
+.col-5 {
+    float: left;
+}
+.col-6 {
+    float: left;
+}
+.line {
+    border-top: 1px solid blue;
+}
+.black{
+    border-top: 1px solid black;
+}

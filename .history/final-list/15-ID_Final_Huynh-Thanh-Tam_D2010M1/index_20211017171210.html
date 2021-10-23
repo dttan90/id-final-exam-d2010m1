@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+<!-- CSS: Đây là phần định dạng css cho menu -->
+    <style>
+    
+    *{
+        padding:0;
+        margin: 0;
+    }
+    html,body{
+        text-align: center;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    #container{
+        width: 1048px;
+        height: 100%;
+        background-color: rgb(94, 85, 85);
+        display: inline-block;
+        position: relative;
+    }
+    #header{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+    }
+    #logo{
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+    #logo img{
+            width: 120px;
+            padding-top: 20px;
+        }
+    #menu {
+        display: inline-block;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+        position: fixed;
+        top: 45px;
+        right: 150px;
+    }
+    .button {
+        border: none;
+        color: rgb(236, 167, 16);
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 30px;
+        position: absolute;
+        top: 30px;
+        right: 25px;
+    }
+
+    .button1 {
+        background-color: rgb(236, 167, 16); 
+        color: rgb(124, 68, 4); 
+        border: none;
+    }
+
+    .button1:hover {
+        background-color: rgb(124, 68, 4);
+        color: rgb(236, 167, 16);
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background-color: transparent;
+        font-weight: 700;
+        /* text-transform: uppercase; */
+    }
+    
+    li {
+        float: left;
+        /* border-right: 1px solid white; */
+        text-transform: uppercase;
+        padding-right: 0.5rem;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #f5ed28;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: #333;
+        text-align: center;
+        padding: 0 7px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #f5ed28;
+        z-index: 1;
+        line-height: 2;
+        border: none;
+        transition: all .3s ease-in-out;
+        text-transform: none;
+        padding-right: 0.5rem;
+        min-width: 227px;
+    }
+    
+    .dropdown-content a {
+        color: #333;
+        padding: 3px 16px;
+        display: block;
+        text-align: left;
+        background-color: transparent;
+        /* transition: all .3s ease-in-out; */
+        border: 0!important;
+        padding-left: 1.5rem;
+    }
+    
+    .dropdown-content a:hover {
+        /* background-color: tomato; */
+        background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .item {
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bolder;
+    }
+    
+    .item-symbol {
+        font-size: 7px;
+        position: relative;
+        top: -3px;
+    }
+    #content{
+            width: 100%;
+            height: 800px;
+            position: relative;
+            top: 100px;
+        }
+    #upcontent{
+        width: 100%;
+        height: 300px;
+        }
+    #downcontent{
+        width: 1280px;
+        text-align: left;
+        height: 300px;
+        padding-left: 200px;
+        }
+        #footer{
+            height: 450px;
+            width: 100%;
+            position: absolute;
+            top: 1000px;
+            background-color: rgb(216, 216, 216);
+            text-align: left;
+            padding-left: 70px;
+        }
+    #column1{
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 200px;
+        text-align: left;
+    }
+    #column2{
+        width: 60%;
+        height: 300px;
+        position: absolute;
+        right: 0px;
+    }
+    #column3{
+        width: 420px;
+        height: 300px;
+        position: absolute;
+        left: 200px;
+    }
+    #column4{
+        width: 800px;
+        height: 300px;
+        position: absolute;
+        right: 40px;
+    }
+    .box{
+            width:  100%;
+            display: inline-block;
+        }
+    .box img{
+            width: 300px;
+        }
+    .padding-20{
+            padding-top: 20px;
+        }
+    .padding-40{
+            padding-top: 30px;
+    }
+    .btn1_package {
+        width: 200px;
+        height: 250px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        box-shadow: 2px 2px 2px gray;
+    }
+    .btn1_package:hover{
+        background-color: rgb(124, 68, 4);
+        color: rgb(236, 167, 16);
+    }
+    .btn2_package {
+        width: 200px;
+        height: 250px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        position: absolute;
+        top: 25px;
+        left: 230px;
+        box-shadow: 2px 2px 2px gray;
+    }
+    .btn2_package:hover{
+        background-color: rgb(124, 68, 4);
+        color: rgb(236, 167, 16);
+    }
+    .btn3_package {
+        width: 200px;
+        height: 250px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        position: absolute;
+        top: 25px;
+        left: 450px;
+        box-shadow: 2px 2px 2px gray;
+    }
+    .btn3_package:hover{
+        background-color: rgb(124, 68, 4);
+        color: rgb(236, 167, 16);
+    }
+    .btn4_package {
+        width: 200px;
+        height: 250px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        position: absolute;
+        top: 25px;
+        left: 670px;
+        box-shadow: 2px 2px 2px gray;
+    }
+    .btn4_package:hover{
+        background-color: rgb(124, 68, 4);
+        color: rgb(236, 167, 16);
+    }
+    .img_package{
+        position: absolute;
+        right: 0px;
+    }
+    .header_style{
+        font-size: 32px;
+        color: rgb(226, 176, 11);
+    }
+    .header_style2{
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+    }
+    .text_align{
+        text-align: justify;
+    }
+    .header_style3{
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        text-align: right;
+        text-shadow: gray 5px 5px 5px;
+        text-decoration: yellow line-through 3px;
+    }
+    .img_package img{
+        width: 600px;
+    }
+    #column5{
+            height: 100px;
+            width: 350px;
+           position: absolute;
+            top: 80px;
+            left:70px;
+            text-align: left;
+        }
+    #column6{
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            top: 80px;
+            left: 580px;
+            text-align: left;
+        }
+    #column7{
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            top: 80px;
+            right: 70px;
+            text-align: left;
+        }
+        #column8{
+            height: 100px;
+            width: 350px;
+           position: absolute;
+            top: 290px;
+            left: 70px;
+            text-align: left;
+        }
+    #column9{
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            top: 290px;
+            left: 580px;
+            text-align: left;
+        }
+    #column10{
+            height: 100px;
+            width: 350px;
+            position: absolute;
+            top: 290px;
+            right: 70px;
+            text-align: left;
+        }
+    </style>
+    </style>
+    
+  </head>
+  <body>
+    <div id="Container">
+        <div id="header">
+            <div id="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="dropdown">
+                        <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Multimedia</a>
+                            <a href="#">Arena Multimedia</a>
+                            <a href="#">Tại sao chọn Arena Multimedia</a>
+                            <a href="#">Cơ sở vật chất</a>
+                            <a href="#">Cộng đồng nói về Arena</a>
+                            <a href="#">Nhân vật truyền cảm hứng</a>
+                            <a href="#">Hỏi & đáp</a>
+                            <a href="#"> </a>
+            
+                        </div>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                            <a href="#">Chương trình đào tạo</a>
+                            <a href="#">Phương pháp đào tạo</a>
+                            <a href="#">Học phí</a>
+            
+                            <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                            <a href="#">Kết quả thi tuyển</a>
+                            <a href="#">Thông tin tuyển sinh</a>
+                            <a href="#">Lịch tuyển sinh</a>
+                            <a href="#">Tài liệu tuyển sinh</a>
+                            <a href="#">Đề thi mẫu</a>
+            
+                        </div>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Đội ngũ giảng viên</a>
+                            <a href="#">Đồ án nổi bật</a>
+                            <a href="#">Hoạt động học viên</a>
+            
+                            <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                            <a href="#">Học viên tiêu biểu</a>
+                            <a href="#">Portfolio học viên</a>
+            
+                        </div>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                            <a href="#">Tin Arena</a>
+                            <a href="#">Tin Multimedia</a>
+                            <a href="#">Tin báo chí</a>
+            
+                            <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+            
+                        </div>
+                    </li>
+            
+                    <li class="dropdown">
+                        <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Đối tác liên thông</a>
+                            <a href="#">Hỗ trợ tuyển dụng</a>
+                            <a href="#">Tin tuyển dụng</a>
+            
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="button">
+                <button class="button button1">Đăng ký</button>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="upcontent">
+                <div id="column1">
+                    <div class="box padding-10">
+                        <h2 class="padding-20 header_style">Arena</h2>
+                        <h2 class="header_style">Multimedia</h2>
+                        <p class="padding-20">Thương hiệu số một Châu Á về đạo tạo chuyên gia Mỹ Thuật đa phương tiện</p>
+                    </div>
+                </div>
+                <div id="column2">
+                    <div class="btn1_package">
+                        <img class="padding-40" src="images/index/icon-1.png" alt="25 năm kinh nghiệm">
+                        <p class="padding-40">25 năm kinh nghiệm</p>
+                    </div>
+                    <div class="btn2_package">
+                        <img class="padding-40" src="images/index/icon-2.png" alt="25 năm kinh nghiệm">
+                        <p class="padding-40">250 trung tâm</p>
+                    </div>
+                    <div class="btn3_package">
+                        <img class="padding-40" src="images/index/icon-3.png" alt="25 năm kinh nghiệm">
+                        <p class="padding-40">450.000 học viên</p>
+                    </div>
+                    <div class="btn4_package">
+                        <img class="padding-40" src="images/index/icon-4.png" alt="25 năm kinh nghiệm">
+                        <p class="padding-40">20 quốc gia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="downcontent">
+                <h2 class="header_style padding-20" style="padding-bottom:20px">Đào tạo - tuyển sinh</h2>
+                <hr hr style="height:3px;border-width:0;color:gray;background-color:gray">
+                <p class="padding-20">Chương trình chuyên gia Mỹ thuật đa phương tiện (Arena Multimedia Specialist Program - AMSP) kéo dài 30 tháng (4 kỳ học) tỏng lĩnh vực thiết kế Truyền thông & Quảng cáo, sản xuất nội dung giải trí Kỹ thuật số </p>
+                <div id="column3">
+                    <h1 class="padding-40 text_align header_style2">THIẾT KẾ WEB VÀ ỨNG DỤNG KỸ THẬT SỐ</h1>
+                    <P class="padding-40 text_align">Học kỳ 2 cung cấp những kiến thức để thiết kế ra giao diện một website hoàn chỉnh cùng những ứng dụng phục vụ cho Digital Marketing, Social Media, App Mobile. Để làm được những điều đó, học viên phải trả qua các môn học như: Thiết kế giao diện web cơ bản, phát triển trang web tương tác, sử dụng hình ảnh động cho web bằng Animate CC, tiếp thị số và khái niệm truyền thông,... Kết thúc ké 2, học viên sẽ có cơ hội đảm nhận nhiều vị trí khác nhau, từ nhà thiết kế qqeb đến thiết kế đồ họa động</P>
+                </div>
+                <div id="column4">
+                    <div class="img_package">
+                        <h2 class="header_style3">Design</h2>
+                        <h2 class="header_style3">& Digital Design</h2>
+                        <img class="padding-40" src="images/index/hk2-img.jpg" alt="Design & Degital design">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p style="padding-top: 20px;padding-bottom: 20px;">TP.HCM</p>
+            <hr style="height:1.5px;border-width:0;color:rgb(59, 10, 150);background-color:rgb(59, 10, 150)">
+            <div id="column5">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Nguyễn Đình Chiểu</p>
+                <hr>
+                <p style="padding-top: 10px;">212-214 Nguyễn Đình Chiểu, P. Võ Thị Sáu, Q.3</p>
+                <p style="padding-top: 10px;">Tel: 1800 1525</p>
+                <p style="padding-top: 10px;">Email: arena@aprotrain.com</p>
+            </div>
+            <div id="column6">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Nguyễn Kiệm</p>
+                <hr>
+                <p style="padding-top: 10px;">778/10 Nguyễn Kiệm, P.4, Q. Phú Nhuận</p>
+                <p style="padding-top: 10px;">Tel: 1800 6325</p>
+                <p style="padding-top: 10px;">Email: arena@aprotrain.com</p>
+
+            </div>
+            <div id="column7">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Tân Kỳ Tân Quý</p>
+                <hr>
+                <p style="padding-top: 10px;">Số 6 Tân Kỳ Tân Quý, P.15, Q.Tân Bình</p>
+                <p style="padding-top: 10px;">Tel: 1800 2074</p>
+                <p style="padding-top: 10px;">Email: arena@aprotrain.com</p>
+            </div>
+           <P style="padding-top: 170px;padding-bottom: 20px;">HÀ NỘI</P>
+           <hr style="height:1.5px;border-width:0;color:rgb(59, 10, 150);background-color:rgb(59, 10, 150)">
+           <div id="column8">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Trúc Khê</p>
+                <hr>
+                <p style="padding-top: 10px;">80 Trúc Khê, P.Láng Hạ, Q.Đống Đa</p>
+                <p style="padding-top: 10px;">Tel: 1800 1542</p>
+                <p style="padding-top: 10px;">Email: arena2@aprotrain.com</p>
+            </div>
+            <div id="column9">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Phạm Văn Bạch</p>
+                <hr>
+                <p style="padding-top: 10px;">D29 Phạm Văn Bạch, P.Yên Hòa, Q.Cầu Giấy</p>
+                <p style="padding-top: 10px;">Tel: 1800 1542</p>
+                <p style="padding-top: 10px;">Email: arena2@aprotrain.com</p>
+
+            </div>
+            <div id="column10">
+                <p style="padding-top: 10px;padding-bottom: 10px;">Trần Phú</p>
+                <hr>
+                <p style="padding-top: 10px;">110 Trần Phú, P. Mộ Lao, Q. Hà Đông</p>
+                <p style="padding-top: 10px;">Tel: 1800 1542</p>
+                <p style="padding-top: 10px;">Email: arena2@aprotrain.com</p>
+
+            </div>
+    </div>
+    
+  </body>
+<!-- InstanceEnd --></html>

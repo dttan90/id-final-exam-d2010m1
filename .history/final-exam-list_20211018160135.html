@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Các meta (siêu dữ liệu) -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Tiêu đề hiển thị trên thanh địa chỉ trình duyệt -->
+    <title>Arena Mutimedia</title>
+
+    <!-- icon trên thanh địa chỉ trình duyệt -->
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/edd0735664.js" crossorigin="anonymous"></script>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px 20px;
+            text-align: left;
+            margin-left: 80px;
+            font-weight: 500;
+            /* font-size: 16px; */
+        }
+        
+        th {
+            background: lightgreen;
+        }
+        
+        #main-page a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+        #main-page a:hover {
+            display: block;
+            background: yellow;
+        }
+        
+        #main-page a:visited {
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div id="header">
+        <div id="logo">
+            <a href="./index.html"> <img src="./images/logo.png"></a>
+        </div>
+        <div id="sign-up"><a href="#">Đăng ký</a></div>
+
+        <!-- menu -->
+        <div id="menu">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Multimedia</a>
+                        <a href="#">Arena Multimedia</a>
+                        <a href="#">Tại sao chọn Arena Multimedia</a>
+                        <a href="#">Cơ sở vật chất</a>
+                        <a href="#">Cộng đồng nói về Arena</a>
+                        <a href="#">Nhân vật truyền cảm hứng</a>
+                        <a href="#">Hỏi & đáp</a>
+                        <a href="#"> </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                        <a href="#">Chương trình đào tạo</a>
+                        <a href="#">Phương pháp đào tạo</a>
+                        <a href="#">Học phí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                        <a href="#">Kết quả thi tuyển</a>
+                        <a href="#">Thông tin tuyển sinh</a>
+                        <a href="#">Lịch tuyển sinh</a>
+                        <a href="#">Tài liệu tuyển sinh</a>
+                        <a href="#">Đề thi mẫu</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đội ngũ giảng viên</a>
+                        <a href="#">Đồ án nổi bật</a>
+                        <a href="#">Hoạt động học viên</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                        <a href="#">Học viên tiêu biểu</a>
+                        <a href="#">Portfolio học viên</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                        <a href="#">Tin Arena</a>
+                        <a href="#">Tin Multimedia</a>
+                        <a href="#">Tin báo chí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đối tác liên thông</a>
+                        <a href="#">Hỗ trợ tuyển dụng</a>
+                        <a href="#">Tin tuyển dụng</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="./final-exam-list.html">Bài thi</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="container">
+
+
+
+        <!-- id main content -->
+        <div id="main-content">
+
+            <div id="main-page">
+                <h2>Danh sách các bài đã nộp</h2>
+                <table style="width: 80%;">
+                    <thead>
+                        <tr>
+                            <th style="width: 30px;">Stt</th>
+                            <th>Họ và tên</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./final-list/1-ID_Final_Vu-Thien-An_D2010M1/" target="_blank">Vũ Thiên Ân</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- Bạn này bổ sung bày sau -->
+                        <tr>
+                            <td>2</td>
+                            <td><a href="./final-list/2-ID_Final_Nguyen-Duc-Dai_D2010M1/" target="_blank">Nguyễn Đức Đại</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td><a href="./final-list/3-ID_Final_Le-Minh-Hanh_D2010M1/" target="_blank">Lê Minh Hạnh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td><a href="./final-list/4-ID_Final_LePhuongMinh_D2010M1/" target="_blank">Lê Phương Minh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><a href="./final-list/5-ID_Final_Le-Hoang-Hong-Ngoc_D2010M1/" target="_blank">Lê Hoàng Hồng Ngọc</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td><a href="./final-list/6-ID_Final_Tat-Tuan-Phat_D2010M1/" target="_blank">Tất Tuấn Phát</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td><a href="./final-list/7-ID_Final_Nguyen-Cao-Sang_D2010M1/" target="_blank">Nguyễn Cao Sang</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td><a href="./final-list/8-ID_Final_Nguyen-Ba-Thoai_D2010M1/" target="_blank">Nguyễn Bá Thoại</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td><a href="./final-list/9-ID_Final_TranDinhHoangThuan_D2010M1/" target="_blank">Trần Đinh Hoàng Thuận</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td><a href="./final-list/10-ID_Final_Tran_Phuc_Toan_D2010M1/" target="_blank">Trần Phúc Toàn</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td><a href="./final-list/11-ID_Final_Le-Thi-Thuy-Trang_D2010M1/" target="_blank">Lê Thị Thùy Trang</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td><a href="./final-list/12-ID_Final_Mai-Phuong-Uyen_D2010M1/" target="_blank">Mai Phương Uyên</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td><a href="./final-list/13-ID_Final_To-My-Linh_D2010M1/" target="_blank">Tô Mỹ Linh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>14</td>
+                            <td><a href="./final-list/14-ID_Final_Nguyen-Song-Thien-Bao_D2010M1/" target="_blank">Nguyễn Song Thiên Bảo</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td><a href="./final-list/15-ID_Final_Huynh-Thanh-Tam_D2010M1/" target="_blank">Huỳnh Thanh Tâm</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td><a href="#" target="_blank">Đang cập nhật...</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td><a href="#" target="_blank">Đang cập nhật...</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>18</td>
+                            <td><a href="#" target="_blank">Đang cập nhật...</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td><a href="#" target="_blank">Đang cập nhật...</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td><a href="#" target="_blank">Đang cập nhật...</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
